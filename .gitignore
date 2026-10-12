@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# scratch & temporary files
+/scratch/
+/screenshots/
+/doubtster-landing-nextjs/
+*.html
+*.py
+issues.txt
+test-features.js

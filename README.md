@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Doubtster web (Next.js)
 
-## Getting Started
+Landing, blog, article pages, legal pages, signup and login, in the same UI as the HTML versions.
 
-First, run the development server:
+## Run
+    npm install
+    npm run dev        # http://localhost:3000
+    npm run build && npm start
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Routes
+| Route | Source |
+|---|---|
+| `/` | `src/app/page.tsx`, components in `src/components/landing` |
+| `/blog` | `src/components/blog/BlogHome.tsx` (search and filters are client side) |
+| `/blog/[slug]` | `src/app/blog/[slug]/page.tsx`, content in `src/content/articles.ts` |
+| `/terms`, `/privacy`, `/refund-policy` | markdown in `src/content/legal`, converted by `src/lib/legal.ts` |
+| `/signup`, `/login` | `src/components/auth/AuthPage.tsx`, config in `src/lib/authConfig.ts` |
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Each page's CSS lives in `src/styles/*.css`, scoped under a wrapper class (`.pg-landing`, `.pg-blog`, `.pg-post`, `.pg-legal`, `.pg-auth`) so pages cannot affect each other.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Add an article
+Add an object to `ARTICLES` in `src/content/articles.ts` and a one line board text in `BOARD` (`src/lib/blog.ts`). Prices come from `src/content/pricing.ts`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Before launch
+- Fill the `[PLACEHOLDER]` fields in `src/content/legal/*.md` (they show highlighted on the page) and have a lawyer review them.
+- Auth: build the endpoints in `src/lib/authConfig.ts` (Google route `/auth/google`), then set `NEXT_PUBLIC_AUTH_DEMO=false`.
+- Set `NEXT_PUBLIC_SITE_URL`.
+- `src/lib/chalk.ts` (video board engine) and `src/content/notes.ts` are kept as `@ts-nocheck` modules ported from the HTML.
