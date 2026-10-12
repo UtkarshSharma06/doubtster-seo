@@ -11,7 +11,7 @@ const PHRASES = [
 ];
 const CHIPS = ["why does ice float?", "solve 2x + 5 = 17", "explain recursion"];
 
-/** The hero chat box. Types example questions until the visitor clicks in, then sends them to /signup?q=... */
+/** The hero chat box. Types example questions until the visitor clicks in, then sends them to app.doubtster.com */
 export function HeroChat() {
   const [value, setValue] = useState("");
   const [focused, setFocused] = useState(false);
@@ -29,7 +29,8 @@ export function HeroChat() {
       </div>
       <form
         ref={form}
-        action="/signup"
+        action="https://app.doubtster.com"
+        target="_blank"
         method="get"
         onSubmit={(e) => { if (!value.trim()) { e.preventDefault(); (form.current?.elements.namedItem("q") as HTMLElement | null)?.focus(); } }}
       >

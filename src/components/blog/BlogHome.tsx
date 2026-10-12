@@ -211,8 +211,8 @@ export function BlogHome() {
           <h2>stuck on a question right now?</h2>
           <p>Chat is always free. Videos start with a $1.99 trial.</p>
           <div className="btns">
-            <Link className="pill w" href="/signup">start your trial</Link>
-            <Link className="pill" href="/signup">ask in chat, free</Link>
+            <a className="pill w" href="https://app.doubtster.com" target="_blank" rel="noopener noreferrer">start your trial</a>
+            <a className="pill" href="https://app.doubtster.com" target="_blank" rel="noopener noreferrer">ask in chat, free</a>
           </div>
         </div>
       </section>

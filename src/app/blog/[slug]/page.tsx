@@ -98,7 +98,7 @@ export default async function ArticlePage({ params }: Props) {
             <h2>see it worked out on screen</h2>
             <p>Chat is always free. Videos start with a $1.99 trial.</p>
             <div className="btns">
-              <Link className="pill w" href="/signup">start your trial</Link>
+              <a className="pill w" href="https://app.doubtster.com" target="_blank" rel="noopener noreferrer">start your trial</a>
               <Link className="pill" href="/blog">back to the blog</Link>
             </div>
           </div>

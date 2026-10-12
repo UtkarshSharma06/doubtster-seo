@@ -5,12 +5,13 @@ type Props = {
   /** Highlight the blog link. */
   blog?: boolean;
   /** Right-hand link, defaults to "start trial". */
-  cta?: { href: string; label: string };
+  cta?: { href: string; label: string; external?: boolean };
   /** Adds the reading progress bar under the menu. Give the inner <i> an id the page script can drive. */
   progress?: boolean;
 };
 
-export function Header({ blog, cta = { href: "/signup", label: "start trial" }, progress }: Props) {
+export function Header({ blog, cta = { href: "https://app.doubtster.com", label: "start trial", external: true }, progress }: Props) {
+  const isExternal = cta.external ?? cta.href.startsWith("http");
   return (
     <header className="bar">
       <div className="in">
@@ -30,7 +31,12 @@ export function Header({ blog, cta = { href: "/signup", label: "start trial" }, 
         </div>
         <div className="r">
           <span><Clock /></span>
-          <Link href={cta.href}>{cta.label}</Link>
+          <a href="https://app.doubtster.com" target="_blank" rel="noopener noreferrer">log in</a>
+          {isExternal ? (
+            <a href={cta.href} target="_blank" rel="noopener noreferrer">{cta.label}</a>
+          ) : (
+            <Link href={cta.href}>{cta.label}</Link>
+          )}
         </div>
         {progress && (
           <div className="pbar" aria-hidden="true">

@@ -40,8 +40,8 @@ export function Hero() {
           <p className="sub">a study buddy that explains it on video</p>
           <HeroChat />
           <div className="btns">
-            <Link className="pill b" href="/signup">start your trial</Link>
-            <Link className="pill" href="/signup">ask in chat, free</Link>
+            <a className="pill b" href="https://app.doubtster.com" target="_blank" rel="noopener noreferrer">start your trial</a>
+            <a className="pill" href="https://app.doubtster.com" target="_blank" rel="noopener noreferrer">ask in chat, free</a>
           </div>
           <p className="note-s">$1.99 for 7 days and 3 videos. Cancel before day 7 and that&apos;s all you pay.</p>
         </div>

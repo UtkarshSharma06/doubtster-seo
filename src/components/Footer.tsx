@@ -13,7 +13,8 @@ export function Footer({ mark = true, resources }: { mark?: boolean; resources?:
           <h4>product</h4>
           <Link href="/#features">features</Link>
           <Link href="/#pricing">pricing</Link>
-          <Link href="/signup">start trial</Link>
+          <a href="https://app.doubtster.com" target="_blank" rel="noopener noreferrer">start trial</a>
+          <a href="https://app.doubtster.com" target="_blank" rel="noopener noreferrer">log in</a>
         </div>
         <div>
           <h4>resources</h4>
