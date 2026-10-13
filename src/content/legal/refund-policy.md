@@ -38,7 +38,7 @@ Version: 1.0
 
 ## 2. How to cancel {#how-to-cancel}
 
-**2.1 Cancel anytime.** You can cancel from your account settings or by emailing [SUPPORT EMAIL]. We will confirm your cancellation by email. If you do not receive a confirmation, contact us before your next charge date.
+**2.1 Cancel anytime.** You can cancel from your account settings or by emailing contact@doubtster.com. We will confirm your cancellation by email. If you do not receive a confirmation, contact us before your next charge date.
 
 **2.2 What cancelling does.** Cancelling stops future charges. It does not refund a charge that has already been made.
 
@@ -112,9 +112,9 @@ Version: 1.0
 
 ## 7. How to request a refund {#how-to-request}
 
-**7.1 Send us the details.** Email [SUPPORT EMAIL] within 14 days of the charge. Please include your account email, the date and amount of the charge, your receipt or transaction number, what went wrong, and any screenshots.
+**7.1 Send us the details.** Email contact@doubtster.com within 14 days of the charge. Please include your account email, the date and amount of the charge, your receipt or transaction number, what went wrong, and any screenshots.
 
-**7.2 Our reply.** We aim to reply within [SUPPORT RESPONSE TIME]. We will tell you our decision, and our reasons, by email.
+**7.2 Our reply.** We aim to reply within 24 to 48 hours. We will tell you our decision, and our reasons, by email.
 
 **7.3 Payment of refunds.** An approved refund goes back to the original payment method, usually through our payment provider. It can take 5 to 10 business days to appear, depending on your bank or card issuer.
 
@@ -150,6 +150,6 @@ Version: 1.0
 
 ## 11. Contact us {#contact}
 
-[LEGAL ENTITY NAME]
-[REGISTERED ADDRESS]
-Email: [SUPPORT EMAIL]
+Doubtster
+27, Sahyog Nagar, near Shiva Talkies, Ward No 19, 321001, Rajasthan
+Email: contact@doubtster.com

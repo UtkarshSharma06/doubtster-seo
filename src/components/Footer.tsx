@@ -29,8 +29,15 @@ export function Footer({ mark = true, resources }: { mark?: boolean; resources?:
           <Link href="/refund-policy">refund policy</Link>
         </div>
         <div>
-          <h4>disclaimer</h4>
-          <p>AI explanations can contain mistakes. Check important answers with your teacher.</p>
+          <h4>contact</h4>
+          <a href="mailto:contact@doubtster.com">contact@doubtster.com</a>
+          <p style={{ margin: "6px 0 10px", fontSize: "12px", color: "var(--mute)", lineHeight: 1.45 }}>
+            27, Sahyog Nagar, near Shiva Talkies,<br />
+            Ward No 19, 321001, Rajasthan
+          </p>
+          <p style={{ margin: 0, fontSize: "11.5px", color: "var(--mute)", lineHeight: 1.4 }}>
+            AI explanations can contain mistakes. Check important answers with your teacher.
+          </p>
         </div>
       </div>
       {mark && <div className="mark" aria-hidden="true">doubtster</div>}

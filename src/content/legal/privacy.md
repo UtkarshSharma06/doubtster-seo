@@ -17,11 +17,11 @@ Version: 1.0
 
 ## 1. Who we are and what this covers {#who-we-are}
 
-**1.1** Doubtster is operated by [LEGAL ENTITY NAME], of [REGISTERED ADDRESS] ("Doubtster", "we", "us" or "our"). We are the controller of the personal data described in this policy, which means we decide how and why it is used.
+**1.1** Doubtster is operated by Doubtster, of 27, Sahyog Nagar, near Shiva Talkies, Ward No 19, 321001, Rajasthan ("Doubtster", "we", "us" or "our"). We are the controller of the personal data described in this policy, which means we decide how and why it is used.
 
 **1.2** This policy explains what personal data we collect when you use the Doubtster website, apps and related services (the "Service"), why we collect it, who we share it with, how long we keep it, and the choices you have. It forms part of our Terms and Conditions, and words defined there have the same meaning here.
 
-**1.3** You can contact us about privacy at [PRIVACY EMAIL].
+**1.3** You can contact us about privacy at contact@doubtster.com.
 
 ## 2. What we collect {#what-we-collect}
 
@@ -128,13 +128,13 @@ Version: 1.0
 - withdraw consent you have given, at any time, without affecting what happened before; and
 - complain to your local data protection authority.
 
-**9.2 How to ask.** Email [PRIVACY EMAIL] from the email address on your account. We may ask you to confirm who you are. We aim to reply within one month, or sooner where the law says so. There is no charge unless a request is clearly excessive.
+**9.2 How to ask.** Email contact@doubtster.com from the email address on your account. We may ask you to confirm who you are. We aim to reply within one month, or sooner where the law says so. There is no charge unless a request is clearly excessive.
 
 **9.3 EU and UK.** You have the rights above under the GDPR and UK GDPR. You can complain to your local supervisory authority, such as the Information Commissioner's Office in the UK.
 
 **9.4 California.** If you live in California, you have the right to know what personal information we collect, use and disclose, to request deletion and correction, and not to be treated unfairly for using these rights. We do not sell or share personal information as defined by California law.
 
-**9.5 India.** If you live in India, under the Digital Personal Data Protection Act, 2023 you have the right to access information about your data, to ask for correction and erasure, to have your grievances addressed, and to nominate another person to exercise your rights if you die or cannot do so. Our grievance contact is [GRIEVANCE OFFICER NAME AND EMAIL].
+**9.5 India.** If you live in India, under the Digital Personal Data Protection Act, 2023 you have the right to access information about your data, to ask for correction and erasure, to have your grievances addressed, and to nominate another person to exercise your rights if you die or cannot do so. Our grievance contact is contact@doubtster.com.
 
 **9.6 Australia, New Zealand and Canada.** You can ask to access or correct your personal information, and you can complain to us or to the privacy regulator in your country.
 
@@ -142,7 +142,7 @@ Version: 1.0
 
 **10.1** You must be at least 16 to create an account. If you are under 18, you may use the Service only with the permission of a parent or guardian, as set out in our Terms and Conditions.
 
-**10.2** We do not knowingly collect personal data from anyone under 16. If you think a child has given us data without a parent's permission, email [PRIVACY EMAIL] and we will delete it.
+**10.2** We do not knowingly collect personal data from anyone under 16. If you think a child has given us data without a parent's permission, email contact@doubtster.com and we will delete it.
 
 <!-- OWNER DECISION: minimum age 16 is assumed, matching the Terms. LAWYER: confirm for each launch market (COPPA in the US, GDPR child consent ages in the EU and UK, India's rules on children's data, and local rules in Australia, New Zealand and Canada). -->
 
@@ -150,7 +150,7 @@ Version: 1.0
 
 **11.1** We use reasonable technical and organisational measures to protect your data, such as encryption in transit, access controls and monitoring. No system is completely secure, so we cannot promise absolute security.
 
-**11.2** Keep your login details private, and tell us at [PRIVACY EMAIL] if you think someone has used your account.
+**11.2** Keep your login details private, and tell us at contact@doubtster.com if you think someone has used your account.
 
 **11.3** If a breach affects your personal data in a way the law says we must report, we will tell you and the relevant authority as the law requires.
 
@@ -162,7 +162,7 @@ Version: 1.0
 
 ## 13. Contact us {#contact}
 
-[LEGAL ENTITY NAME]
-[REGISTERED ADDRESS]
-Privacy email: [PRIVACY EMAIL]
-General support: [SUPPORT EMAIL]
+Doubtster
+27, Sahyog Nagar, near Shiva Talkies, Ward No 19, 321001, Rajasthan
+Privacy email: contact@doubtster.com
+General support: contact@doubtster.com

@@ -19,7 +19,7 @@ Version: 1.0
 
 ## 1. Who we are and what these terms cover {#who-we-are}
 
-**1.1** Doubtster is operated by [LEGAL ENTITY NAME], of [REGISTERED ADDRESS] ("Doubtster", "we", "us" or "our"). You can contact us at [SUPPORT EMAIL].
+**1.1** Doubtster is operated by Doubtster, of 27, Sahyog Nagar, near Shiva Talkies, Ward No 19, 321001, Rajasthan ("Doubtster", "we", "us" or "our"). You can contact us at contact@doubtster.com.
 
 **1.2** These terms apply to your use of the Doubtster website, apps and related services (together, the "Service"). By creating an account, starting a trial, buying a plan or credits, or otherwise using the Service, you agree to these terms. If you do not agree, please do not use the Service.
 
@@ -33,7 +33,7 @@ Version: 1.0
 
 **2.2** If you buy a plan for someone else, such as your child, you are the account holder and you are responsible for the account and its charges.
 
-**2.3** You must give us accurate information, keep your login details secure, and tell us promptly at [SUPPORT EMAIL] if you think someone has used your account without permission. You are responsible for activity on your account unless it was caused by us.
+**2.3** You must give us accurate information, keep your login details secure, and tell us promptly at contact@doubtster.com if you think someone has used your account without permission. You are responsible for activity on your account unless it was caused by us.
 
 **2.4** One account per person. Do not share your account or login with others.
 
@@ -115,7 +115,7 @@ Version: 1.0
 
 > **Important:** Cancel before your trial ends or before your renewal date to avoid the next charge. A charge you forgot to cancel is not refundable.
 
-**7.1 How to cancel.** You can cancel anytime from your account settings or by emailing [SUPPORT EMAIL]. We will confirm your cancellation by email.
+**7.1 How to cancel.** You can cancel anytime from your account settings or by emailing contact@doubtster.com. We will confirm your cancellation by email.
 
 **7.2 If you cancel during the trial.** You will not be charged the plan price. You keep your trial credits until the trial ends. The trial fee is not refundable, except as set out in section 7.6 or where the law requires.
 
@@ -185,7 +185,7 @@ Version: 1.0
 
 **11.2 Feedback.** If you send us ideas or suggestions, we may use them without paying you or crediting you.
 
-**11.3 Copyright concerns.** If you believe something on the Service infringes your copyright, email [SUPPORT EMAIL] with the details and we will review it.
+**11.3 Copyright concerns.** If you believe something on the Service infringes your copyright, email contact@doubtster.com with the details and we will review it.
 
 ## 12. Third-party services {#third-party-services}
 
@@ -197,7 +197,7 @@ Version: 1.0
 
 **13.1 Availability.** We work to keep the Service available, but we do not promise that it will always be uninterrupted, error free or secure. It may be unavailable for maintenance or for reasons outside our control. Videos can take time to generate and sometimes fail.
 
-**13.2 Support.** You can reach us at [SUPPORT EMAIL]. We aim to reply within [SUPPORT RESPONSE TIME], but we cannot promise a specific response time.
+**13.2 Support.** You can reach us at contact@doubtster.com. We aim to reply within 24 to 48 hours, but we cannot promise a specific response time.
 
 **13.3 Beta features.** Some features may be labelled as beta or "coming soon". They may change or be removed.
 
@@ -241,7 +241,7 @@ Version: 1.0
 
 **18.2 Consumers.** If you are a consumer, you also keep the protection of the mandatory consumer laws of the country where you live, and you may bring a claim in the courts of that country if the law allows.
 
-**18.3 Talk to us first.** If you have a complaint, please contact us at [SUPPORT EMAIL]. We will aim to resolve it within 30 days.
+**18.3 Talk to us first.** If you have a complaint, please contact us at contact@doubtster.com. We will aim to resolve it within 30 days.
 
 <!-- LAWYER: confirm governing law, courts, and whether to add an arbitration or class action clause for the US. Mandatory consumer rules in the EU, UK, Australia and New Zealand usually override these for consumers. -->
 
@@ -257,7 +257,7 @@ Version: 1.0
 
 **19.5 Events beyond our control.** We are not responsible for failures or delays caused by events beyond our reasonable control.
 
-**19.6 Notices.** We may give you notice by email or in the app. You can give us notice at [SUPPORT EMAIL].
+**19.6 Notices.** We may give you notice by email or in the app. You can give us notice at contact@doubtster.com.
 
 **19.7 Language.** These terms are written in English. If we provide a translation and the two differ, the English version applies, except where the law of your country says otherwise.
 
@@ -265,6 +265,6 @@ Version: 1.0
 
 ## 20. Contact us {#contact}
 
-[LEGAL ENTITY NAME]
-[REGISTERED ADDRESS]
-Email: [SUPPORT EMAIL]
+Doubtster
+27, Sahyog Nagar, near Shiva Talkies, Ward No 19, 321001, Rajasthan
+Email: contact@doubtster.com

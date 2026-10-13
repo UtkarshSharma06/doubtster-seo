@@ -23,6 +23,7 @@ function inline(t: string) {
   t = t.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
   t = t.replace(/\[([A-Z][A-Z0-9 ,&/"'.\-]{2,}[A-Z".])\]/g, '<mark class="ph">[$1]</mark>');
   for (const [name, href] of LINKS) t = t.split(name).join(`<a href="${href}">${name}</a>`);
+  t = t.replace(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g, '<a href="mailto:$1">$1</a>');
   return t;
 }
 
