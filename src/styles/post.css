@@ -12,14 +12,12 @@
 /* menu bar */
 .pg-post .bar{position:sticky;top:0;z-index:50;background:rgba(244,244,245,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);height:50px}
 .pg-post .bar .in{height:50px;display:flex;align-items:center;padding:0 16px;gap:18px;font-size:15px}
-.pg-post .bar nav{display:flex;gap:18px;color:var(--mute)}
-.pg-post .bar nav a:hover{color:var(--ink)}
+.pg-post .bar nav.nav-desk{display:flex;gap:18px;color:var(--mute)}
+.pg-post .bar nav.nav-desk a:hover{color:var(--ink)}
 .pg-post .bar b{font-weight:600}
 .pg-post .bar .logo{position:absolute;left:50%;transform:translateX(-50%);font-family:Caveat,cursive;font-size:30px;line-height:1}
 .pg-post .bar .r{margin-left:auto;display:flex;gap:18px;align-items:center;color:var(--mute);font-size:14px}
 .pg-post .bar .r a{color:var(--blue);font-weight:500;font-size:15px}
-@media(max-width:760px){.pg-post .bar nav a:not(:first-child),.pg-post .bar .r span{display:none}.pg-post .bar .logo{display:none}}
-
 /* hero */
 .pg-post .hero{position:relative;padding-bottom:60px;overflow:hidden}
 .pg-post .dots,.pg-post .dots2{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,#B9B9C1 1.3px,transparent 1.6px);background-size:40px 40px}
@@ -83,7 +81,11 @@ linear-gradient(#1D61D8,#3F86F0 55%,#79B1F8)}
 .pg-post .cols p{font-size:12.5px;color:var(--mute);max-width:230px}
 .pg-post .mark{margin:46px 0 0;text-align:center;font-weight:800;font-size:clamp(70px,19vw,250px);letter-spacing:-.05em;line-height:.9;color:#4F96FF;text-shadow:0 1px 0 #2D6CE0,0 2px 0 #2D6CE0,0 3px 0 #2D6CE0,0 4px 0 #2D6CE0,0 5px 0 #2D6CE0,0 6px 0 #2D6CE0,0 7px 0 #2D6CE0,0 8px 0 #2D6CE0,0 9px 0 #2D6CE0,0 10px 0 #2D6CE0;padding-bottom:20px;user-select:none}
 .pg-post .copy{text-align:center;font-size:12px;color:var(--mute);padding:6px 0 22px}
-@media(max-width:700px){.pg-post .cols{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){
+  .pg-post .cols{grid-template-columns:1fr 1fr;gap:20px 14px;padding:0 16px}
+  .pg-post .mark{font-size:clamp(48px,16vw,120px);margin:32px 0 0}
+  .pg-post .copy{padding:6px 16px 20px}
+}
 @media(prefers-reduced-motion:reduce){.pg-post *{animation:none!important;transition:none!important}}
 
 /* article page */
@@ -167,6 +169,8 @@ linear-gradient(#1D61D8,#3F86F0 55%,#79B1F8)}
 .pg-post details.q summary{font-size:.92em}
 .pg-post details.q p{font-size:.9em;margin-top:0}
 .pg-post table{width:100%;border-collapse:collapse;font-size:.85em;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.pg-post .prose table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.pg-post .prose table th,.pg-post .prose table td{white-space:nowrap}
 .pg-post th,.pg-post td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line)}
 .pg-post thead th{background:#F1F1F4;font-size:.85em;color:var(--mute);font-weight:600}
 .pg-post tbody tr:last-child>*{border-bottom:0}
@@ -182,7 +186,13 @@ linear-gradient(#1D61D8,#3F86F0 55%,#79B1F8)}
 .pg-post .glance dt{color:#6B5F20}.pg-post .glance dd{font-weight:600;text-align:right}
 .pg-post .glance ul{list-style:none;margin-top:10px;padding-top:10px;border-top:1px dashed rgba(0,0,0,.25);display:flex;flex-direction:column;gap:4px}
 @media(max-width:1180px){.pg-post .cols3{grid-template-columns:200px minmax(0,1fr);}.pg-post .glance{display:none}}
-@media(max-width:860px){.pg-post .cols3{grid-template-columns:minmax(0,1fr);padding:10px 16px 0}.pg-post .rail{position:static}.pg-post .rail .toc{display:block}.pg-post .tools{justify-content:center}}
+@media(max-width:860px){
+  .pg-post .cols3{grid-template-columns:minmax(0,1fr);padding:10px 16px 0}
+  .pg-post .rail{position:static;max-width:100%}
+  .pg-post .rail .toc{display:block;border:1px solid var(--line);border-radius:10px}
+  .pg-post .tools{justify-content:center;gap:8px}
+  .pg-post .tools button,.pg-post .tools a{height:34px;padding:0 14px;font-size:13.5px}
+}
 /* after */
 .pg-post .after{max-width:1080px;margin:80px auto 0;padding:0 24px}
 .pg-post .upnext{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:0;align-items:stretch}
@@ -209,7 +219,35 @@ linear-gradient(#1D61D8,#3F86F0 55%,#79B1F8)}
 .pg-post .sky p{opacity:.92;margin:10px 0 28px;font-size:18px}
 .pg-post .sky .btns{margin-top:0}.pg-post .sky .pill{color:#111}.pg-post .sky .pill.w{color:#1D61D8}
 .pg-post footer{margin-top:0}
-@media(max-width:900px){.pg-post .ahero .fw,.pg-post .ahero .nm,.pg-post .ahero .fold,.pg-post .ahero .kao{display:none}.pg-post .ahero{padding:40px 0 40px}}
+@media(max-width:900px){
+  .pg-post .ahero .fw,.pg-post .ahero .nm,.pg-post .ahero .fold,.pg-post .ahero .kao{display:none}
+  .pg-post .ahero{padding:36px 0 30px}
+}
+@media(max-width:640px){
+  .pg-post .ahead{padding:0 16px}
+  .pg-post .ahead h1{font-size:clamp(32px,8vw,52px);line-height:1.02}
+  .pg-post .ahead .deck{font-size:16px;margin:14px auto 20px}
+  .pg-post .ahead .btns a{width:100%;max-width:300px;justify-content:center}
+  .pg-post .paper .pad{padding:20px 16px}
+  .pg-post .prose{font-size:16.5px;line-height:1.65}
+  .pg-post .prose section{margin-top:1.8em}
+  .pg-post .prose h2{font-size:1.45em;margin-top:1.6em}
+  .pg-post .tldr{padding:14px 16px;border-radius:10px}
+  .pg-post .prose ol.steps li{padding:12px 14px 12px 48px;font-size:.92em}
+  .pg-post .prose ol.steps li::before{left:12px;top:12px;width:24px;height:24px;font-size:12px}
+  .pg-post .prose p.eq{font-size:1.5em;padding:14px 16px;box-shadow:0 0 0 3px #E6D9B5,0 8px 18px -10px rgba(0,0,0,.4)}
+  .pg-post .callout{padding:14px 16px}
+  .pg-post .calc{padding:14px}
+  .pg-post .calc .seg button{padding:4px 12px;font-size:13px}
+  .pg-post .track{gap:2px}
+  .pg-post .res{grid-template-columns:1fr}
+  .pg-post .upnext .bd2x{padding:16px;min-height:140px;font-size:28px}
+  .pg-post .upnext .tx{padding:18px 16px}
+  .pg-post .after{padding:0 16px;margin-top:50px}
+  .pg-post .sky{padding:50px 16px 60px}
+  .pg-post .sky h2{font-size:clamp(28px,7vw,40px)}
+  .pg-post .sky .btns a{width:100%;max-width:300px;justify-content:center}
+}
 
 /* article content classes (steps, equation, notes, quick answers) */
 .pg-post .prose ol.steps{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:10px;padding:0}
