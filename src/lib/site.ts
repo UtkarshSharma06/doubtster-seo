@@ -20,5 +20,6 @@ export const SITE = {
 
 export const abs = (path: string) => new URL(path, SITE.url).toString();
 
-export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://app.doubtster.com";
+const envApp = process.env.NEXT_PUBLIC_APP_URL;
+export const APP_URL = (envApp && !envApp.includes("localhost") ? envApp : "https://app.doubtster.com");
 export const appUrl = (path: string = "") => `${APP_URL.replace(/\/$/, "")}/${path.replace(/^\//, "")}`;
