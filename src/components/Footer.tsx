@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { Year } from "./Year";
+import { appUrl } from "@/lib/site";
 
 export function Footer({ mark = true, resources }: { mark?: boolean; resources?: { href: string; label: string }[] }) {
   const res = resources ?? [
+    { href: "/examples", label: "examples" },
     { href: "/blog", label: "blog" },
     { href: "/#faq", label: "faq" },
   ];
@@ -11,10 +13,11 @@ export function Footer({ mark = true, resources }: { mark?: boolean; resources?:
       <div className="cols">
         <div>
           <h4>product</h4>
+          <a href={appUrl("/app")}>open app</a>
           <Link href="/#features">features</Link>
           <Link href="/#pricing">pricing</Link>
-          <a href="https://app.doubtster.com" target="_blank" rel="noopener noreferrer">start trial</a>
-          <a href="https://app.doubtster.com" target="_blank" rel="noopener noreferrer">log in</a>
+          <a href={appUrl("/signup")}>start trial</a>
+          <a href={appUrl("/login")}>log in</a>
         </div>
         <div>
           <h4>resources</h4>

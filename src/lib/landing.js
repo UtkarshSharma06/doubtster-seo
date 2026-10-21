@@ -10,8 +10,8 @@ export function initLanding() {
 
 (function(){
 var $=function(i){return document.getElementById(i)};
-$('yr').textContent=new Date().getFullYear();
-function tick(){var d=new Date();$('clock').textContent=d.toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})}
+var yrEl=$('yr');if(yrEl)yrEl.textContent=new Date().getFullYear();
+function tick(){var d=new Date();var c=$('clock');if(c)c.textContent=d.toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})}
 tick();setInterval(tick,30000);
 var w=['they ask it everyday ','they ask it everyday ','they ask it everyday ','they ask it everyday '];
 $('sc').innerHTML=(w.map(function(t,i){return '<span>'+t+'</span>'}).join(''))+(w.map(function(t){return '<span>'+t+'</span>'}).join(''));

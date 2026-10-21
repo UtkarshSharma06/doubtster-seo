@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
 import { Clock } from "./Clock";
+import { appUrl } from "@/lib/site";
 
 type Props = {
   /** Highlight the blog link. */
@@ -13,7 +14,7 @@ type Props = {
   progress?: boolean;
 };
 
-export function Header({ blog, cta = { href: "https://app.doubtster.com", label: "start trial", external: true }, progress }: Props) {
+export function Header({ blog, cta = { href: appUrl("/signup"), label: "start trial", external: true }, progress }: Props) {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const isExternal = cta.external ?? cta.href.startsWith("http");
@@ -43,10 +44,11 @@ export function Header({ blog, cta = { href: "https://app.doubtster.com", label:
       <div className="in">
         <Link className="brand" href="/" aria-label="Doubtster home" onClick={() => setOpen(false)}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/doubtster-logo-light.svg" alt="Doubtster" height={26} />
+          <img src="/brand/doubtster-logo-light.svg" alt="Doubtster" height={36} />
         </Link>
         <nav aria-label="Main" className="nav-desk">
           <Link href="/#features">features</Link>
+          <Link href="/examples">examples</Link>
           <Link href="/#pricing">pricing</Link>
           <Link href="/#faq">faq</Link>
           <Link href="/blog" aria-current={blog ? "page" : undefined}>blog</Link>
@@ -57,9 +59,9 @@ export function Header({ blog, cta = { href: "https://app.doubtster.com", label:
         </div>
         <div className="r">
           <span><Clock /></span>
-          <a href="https://app.doubtster.com" target="_blank" rel="noopener noreferrer" className="login-link">log in</a>
+          <a href={appUrl("/login")} className="login-link">log in</a>
           {isExternal ? (
-            <a href={cta.href} target="_blank" rel="noopener noreferrer" className="cta-link">{cta.label}</a>
+            <a href={cta.href} className="cta-link">{cta.label}</a>
           ) : (
             <Link href={cta.href} className="cta-link">{cta.label}</Link>
           )}
@@ -97,16 +99,17 @@ export function Header({ blog, cta = { href: "https://app.doubtster.com", label:
           <div className="mob-menu">
             <nav className="mob-links" aria-label="Mobile Navigation">
               <Link href="/#features" onClick={() => setOpen(false)}>features</Link>
+              <Link href="/examples" onClick={() => setOpen(false)}>examples</Link>
               <Link href="/#pricing" onClick={() => setOpen(false)}>pricing</Link>
               <Link href="/#faq" onClick={() => setOpen(false)}>faq</Link>
               <Link href="/blog" aria-current={blog ? "page" : undefined} onClick={() => setOpen(false)}>blog</Link>
             </nav>
             <div className="mob-actions">
-              <a href="https://app.doubtster.com" target="_blank" rel="noopener noreferrer" className="mob-login" onClick={() => setOpen(false)}>
+              <a href={appUrl("/login")} className="mob-login" onClick={() => setOpen(false)}>
                 log in
               </a>
               {isExternal ? (
-                <a href={cta.href} target="_blank" rel="noopener noreferrer" className="mob-cta" onClick={() => setOpen(false)}>
+                <a href={cta.href} className="mob-cta" onClick={() => setOpen(false)}>
                   {cta.label}
                 </a>
               ) : (
