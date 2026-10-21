@@ -61,7 +61,7 @@ export function BlogHome() {
             <div className="hchat" role="search">
               <div className="hc-top">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/icon-128.png" alt="" />
+                <img src="/brand/doubtster-icon.svg" alt="" />
                 <span>search the blog</span>
                 <span className="free" role="status" aria-live="polite">{label}</span>
               </div>

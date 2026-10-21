@@ -23,7 +23,7 @@ export function HeroChat() {
     <div className="hchat" id="hchat">
       <div className="hc-top">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/icon-128.png" alt="" />
+        <img src="/brand/doubtster-icon.svg" alt="" />
         <span>ask doubtster</span>
         <span className="free">chat is free</span>
       </div>

@@ -43,7 +43,7 @@ export function Header({ blog, cta = { href: "https://app.doubtster.com", label:
       <div className="in">
         <Link className="brand" href="/" aria-label="Doubtster home" onClick={() => setOpen(false)}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/wordmark.png" alt="Doubtster" height={22} />
+          <img src="/brand/doubtster-logo-light.svg" alt="Doubtster" height={26} />
         </Link>
         <nav aria-label="Main" className="nav-desk">
           <Link href="/#features">features</Link>
@@ -53,7 +53,7 @@ export function Header({ blog, cta = { href: "https://app.doubtster.com", label:
         </nav>
         <div className="logo" aria-hidden="true">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/icon-128.png" alt="" width={28} height={28} />
+          <img src="/brand/doubtster-icon.svg" alt="" width={28} height={28} />
         </div>
         <div className="r">
           <span><Clock /></span>
